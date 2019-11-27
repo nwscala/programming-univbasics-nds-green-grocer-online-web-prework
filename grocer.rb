@@ -24,7 +24,7 @@ def consolidate_cart(cart)
     index_1 += 1 
   end
   index_2 = 0
-  index_3 = index_2 + 1
+  index_3 = 0
   while index_2 < new_cart.length do 
     if new_cart[index_2][:item] == new_cart[index_3][:item]
       new_cart[index_2][:count] += 1
