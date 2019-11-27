@@ -23,7 +23,7 @@ def consolidate_cart(cart)
       new_cart.push(cart[index])
       new_cart[cart[index][:count]] = 1 
     elsif new_cart.has_key?'cart[index][:item]'
-      new_cart
+      new_cart[cart[index][:count]] += 1
     end 
     index += 1 
   end 
