@@ -29,6 +29,7 @@ def consolidate_cart(cart)
     if new_cart[index_2][:item] == new_cart[index_3][:item]
       new_cart[index_2][:count] += 1
       new_cart.delete_at(index_3)
+      index_3 += 1
     end 
     index_2 += 1 
   end
