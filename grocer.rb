@@ -16,16 +16,12 @@ def consolidate_cart(cart)
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
-  index = 0 
+  index_1 = 0 
   new_cart = []
-  while index < cart.length do 
-    if !(new_cart.has_key?'cart[index][:item]')
-      new_cart.push(cart[index])
-      new_cart[cart[index][:count]] = 1 
-    elsif new_cart.has_key?'cart[index][:item]'
-      new_cart[cart[index][:count]] += 1
-    end 
-    index += 1 
+  while index_1 < cart.length do 
+    index_2 = 0
+    while
+    index_1 += 1 
   end 
 end
 
