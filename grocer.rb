@@ -31,6 +31,7 @@ def consolidate_cart(cart)
       new_cart.delete_at(index_3)
     end 
     index_2 += 1
+    index_3 += 1
   end
   new_cart
 end
