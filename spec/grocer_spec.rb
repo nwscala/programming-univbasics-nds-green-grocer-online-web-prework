@@ -51,7 +51,7 @@ describe "Grocer" do
       cart = [find_item_by_name_in_collection('TEMPEH', items), find_item_by_name_in_collection('PEANUTBUTTER', items), find_item_by_name_in_collection('ALMONDS', items)]
       consolidated_cart = consolidate_cart(cart)
       i = 0
-      while i < consolidated_cart.length do
+      while i < consolidated_cart.size do
         expect(consolidated_cart[i][:count]).to eq(1)
         i += 1
       end
